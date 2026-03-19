@@ -1,0 +1,133 @@
+<%- include('layouts/header') %>
+<%- include('layouts/navbar') %>
+
+<div class="container py-5">
+  <nav aria-label="breadcrumb" class="mb-4">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/" class="text-blue text-decoration-none">Trang chủ</a></li>
+      <li class="breadcrumb-item"><a href="/list" class="text-blue text-decoration-none">Sản phẩm</a></li>
+      <li class="breadcrumb-item active"><%= item.name %></li>
+    </ol>
+  </nav>
+
+  <div class="row g-5 align-items-center detail-wrapper p-4 shadow-lg bg-white rounded-5">
+    
+    <div class="col-md-6 text-center">
+      <div class="product-main-image shadow-sm p-2 rounded-4 bg-light">
+        <img src="/images/<%= item.image %>" 
+             alt="<%= item.name %>" 
+             class="img-fluid rounded-4 main-img-zoom"
+             onerror="this.src='https://via.placeholder.com/500x500?text=Anh+dang+cap+nhat'">
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="d-flex align-items-center gap-2 mb-3">
+        <% if (item.hot) { %>
+          <span class="badge-hot">HOT 🔥</span>
+        <% } %>
+        <span class="badge-new">New Arrival</span>
+      </div>
+      
+      <h1 class="display-5 fw-bold mb-2"><%= item.name %></h1>
+      <p class="text-muted small">Mã sản phẩm: #AS-00<%= item.id %></p>
+      
+      <h2 class="text-pink fw-bold mb-4 display-6">
+        <%= item.price.toLocaleString('vi-VN') %> VNĐ
+      </h2>
+      
+      <div class="description-box p-3 rounded-4 mb-4" style="background: #fdf2f8; border-left: 5px solid #ec4899;">
+        <h6 class="fw-bold text-dark"><i class="fa-solid fa-quote-left me-2 text-pink"></i>Giới thiệu:</h6>
+        <p class="text-muted mb-0"><%= item.description %></p>
+      </div>
+
+      <div class="d-flex gap-3 align-items-center mt-5">
+        <div class="quantity-picker">
+          <button type="button" class="btn-qty" onclick="var input = this.parentNode.querySelector('input'); if(input.value > 1) input.value--;">-</button>
+          <input type="number" value="1" min="1" readonly>
+          <button type="button" class="btn-qty" onclick="this.parentNode.querySelector('input').value++">+</button>
+        </div>
+        
+        <button class="btn-buy-now flex-grow-1">
+          <i class="fa-solid fa-cart-plus me-2"></i> Thêm vào giỏ hàng
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('layouts/footer') %>
+
+<style>
+  /* CSS bổ sung để trang Chi tiết lung linh hơn */
+  .detail-wrapper {
+    border: 1px solid rgba(236, 72, 153, 0.1);
+  }
+
+  .main-img-zoom {
+    transition: transform 0.5s ease;
+    max-height: 450px;
+    object-fit: contain;
+  }
+
+  .product-main-image:hover .main-img-zoom {
+    transform: scale(1.05);
+  }
+
+  .badge-new {
+    background: #dbeafe;
+    color: #3b82f6;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+
+  .quantity-picker {
+    display: flex;
+    align-items: center;
+    background: #f1f5f9;
+    padding: 5px;
+    border-radius: 15px;
+  }
+
+  .btn-qty {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: white;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #3b82f6;
+    transition: 0.3s;
+  }
+
+  .btn-qty:hover {
+    background: #3b82f6;
+    color: white;
+  }
+
+  .quantity-picker input {
+    width: 50px;
+    border: none;
+    background: transparent;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .btn-buy-now {
+    background: linear-gradient(45deg, #3b82f6, #ec4899);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(236, 72, 153, 0.3);
+    transition: 0.3s;
+  }
+
+  .btn-buy-now:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(236, 72, 153, 0.4);
+  }
+</style>

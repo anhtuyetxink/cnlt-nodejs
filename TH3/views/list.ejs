@@ -1,0 +1,37 @@
+<%- include('layouts/header') %>
+<%- include('layouts/navbar') %>
+
+<h2 class="mb-4">Sản phẩm</h2>
+
+<div class="row">
+<% items.forEach(item => { %>
+  <div class="col-md-4">
+    <div class="card mb-4">
+
+      <img src="/images/<%= item.image %>">
+
+      <div class="card-body">
+        <h5><%= item.name %></h5>
+        <p><%= item.description %></p>
+
+        <% if(item.hot){ %>
+          <span class="badge bg-danger">Hot</span>
+        <% } else { %>
+          <span class="badge bg-secondary">New</span>
+        <% } %>
+
+        <p class="price mt-2">
+          💰 <%= item.price.toLocaleString() %> VNĐ
+        </p>
+
+        <a href="/detail/<%= item.id %>" class="btn btn-dark w-100">
+          Xem chi tiết
+        </a>
+      </div>
+
+    </div>
+  </div>
+<% }) %>
+</div>
+
+<%- include('layouts/footer') %>

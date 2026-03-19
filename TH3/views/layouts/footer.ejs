@@ -1,0 +1,69 @@
+<footer class="text-center py-4 mt-5 border-top">
+    <p class="text-muted">&copy; 2026 Accessory Shop - Thiết kế bởi Tuyết Trần ✨</p>
+</footer>
+
+</div> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.product-slider').slick({
+            dots: true,                // Hiện dấu chấm điều hướng màu Hồng
+            infinite: true,            // Chạy vô tận
+            speed: 800,                // Tốc độ chuyển mượt mà (800ms)
+            autoplay: true,            // Tự động chạy
+            autoplaySpeed: 2500,       // 2.5 giây đổi một lần
+            slidesToShow: 3,           // Hiện 3 sản phẩm cùng lúc
+            slidesToScroll: 1,
+            cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)', // Hiệu ứng lướt cực mượt
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: { slidesToShow: 2 }
+                },
+                {
+                    breakpoint: 768,
+                    settings: { slidesToShow: 1, arrows: false } // Ẩn mũi tên trên điện thoại cho gọn
+                }
+            ]
+        });
+    });
+</script>
+
+<style>
+    /* Làm cho các dấu chấm (dots) hiện đại hơn */
+    .slick-dots { bottom: -40px; }
+    .slick-dots li button:before {
+        font-size: 12px;
+        color: #3b82f6 !important; /* Màu xanh dương mặc định */
+        opacity: 0.3;
+    }
+    .slick-dots li.slick-active button:before {
+        color: #ec4899 !important; /* Màu hồng khi đang xem */
+        opacity: 1;
+    }
+
+    /* Hiệu ứng phát sáng khi Hover vào Card */
+    .category-card:hover {
+        border: 2px solid #ec4899;
+        box-shadow: 0 0 20px rgba(236, 72, 153, 0.4); /* Phát sáng hồng */
+        cursor: pointer;
+    }
+
+    /* Chỉnh lại icon cho to và rõ */
+    .category-icon {
+        font-size: 4rem;
+        background: linear-gradient(135deg, #dbeafe, #fce7f3);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        margin: 0 auto 20px;
+    }
+</style>
+
+</body>
+</html>

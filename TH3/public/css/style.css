@@ -1,0 +1,148 @@
+/* --- 1. Biến màu sắc & Reset --- */
+:root {
+  --blue-primary: #3b82f6;
+  --pink-primary: #ec4899;
+  --blue-light: #dbeafe;
+  --pink-light: #fce7f3;
+  --dark-text: #1e293b;
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #fdfdfd;
+  color: var(--dark-text);
+  overflow-x: hidden;
+}
+
+/* --- 2. Custom Navbar (Giữ nguyên phong cách cũ) --- */
+.custom-navbar {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(236, 72, 153, 0.1);
+  padding: 15px 0;
+}
+.navbar-brand { font-size: 1.5rem; letter-spacing: -1px; }
+.text-blue { color: var(--blue-primary); }
+.text-pink { color: var(--pink-primary); }
+.nav-link {
+  font-weight: 600;
+  color: var(--dark-text) !important;
+  margin: 0 10px;
+  position: relative;
+  transition: var(--transition);
+}
+.nav-link:hover { color: var(--pink-primary) !important; }
+.nav-link::after {
+  content: ''; position: absolute; width: 0; height: 2px;
+  bottom: 0; left: 0; background: linear-gradient(to right, var(--blue-primary), var(--pink-primary));
+  transition: var(--transition);
+}
+.nav-link:hover::after { width: 100%; }
+
+/* --- 3. NÂNG CẤP HERO SECTION ĐẶC SẮC (Mới) --- */
+.hero-wrapper { padding-top: 20px; }
+
+.hero-section {
+  position: relative;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px) saturate(180%);
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 100px 20px;
+  box-shadow: 0 25px 60px rgba(59, 130, 246, 0.08);
+  overflow: hidden; /* Cần thiết cho hiệu ứng shine */
+}
+
+/* Hiệu ứng ánh sáng lướt qua (Shine) */
+.hero-section .shine {
+  position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg);
+  animation: shine-animation 6s infinite;
+}
+@keyframes shine-animation {
+  0% { left: -100%; }
+  100% { left: 150%; }
+}
+
+.badge-special {
+  background: linear-gradient(90deg, var(--pink-primary), var(--blue-primary));
+  color: white; padding: 10px 20px; border-radius: 50px;
+  font-weight: 800; font-size: 0.85rem; box-shadow: 0 4px 15px rgba(236, 72, 153, 0.2);
+  display: inline-block; margin-bottom: 1.5rem;
+}
+
+.emoji-animate {
+  display: inline-block; font-size: 1.2em;
+  animation: emoji-wiggle 1.5s infinite;
+}
+@keyframes emoji-wiggle {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+}
+
+.btn-hero-gradient {
+  background: linear-gradient(135deg, var(--blue-primary), var(--pink-primary));
+  color: white; padding: 15px 45px; border-radius: 16px;
+  font-weight: 800; text-decoration: none; display: inline-block;
+  transition: var(--transition); box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+}
+.btn-hero-gradient:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(236, 72, 153, 0.4);
+  color: white;
+}
+
+/* --- 4. Category Card & Slider --- */
+.category-card {
+  background: white; border-radius: 24px; padding: 40px 20px; margin: 15px;
+  text-align: center; border: 1px solid #f1f5f9; transition: var(--transition);
+}
+.category-card:hover {
+  border-color: var(--pink-primary); transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(236, 72, 153, 0.15);
+}
+.category-icon { font-size: 3.5rem; margin-bottom: 20px; display: block; transition: transform 0.3s ease; }
+.category-card:hover .category-icon { transform: rotate(15deg) scale(1.2); }
+
+/* --- 5. Trang Chi Tiết Sản Phẩm --- */
+.detail-wrapper {
+  background: white; border-radius: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+.product-main-image {
+  background: #fff; border-radius: 20px; overflow: hidden;
+  padding: 10px; border: 1px solid #f1f5f9; transition: transform 0.3s ease;
+}
+.product-main-image img { max-height: 500px; width: 100%; object-fit: contain; }
+.product-main-image:hover { transform: scale(1.02); }
+
+.badge-hot {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white; padding: 4px 12px; border-radius: 6px; font-size: 0.7rem; font-weight: bold;
+}
+
+.quantity-input-v2 { display: flex; background: #f1f5f9; border-radius: 12px; padding: 5px; }
+.btn-step {
+  border: none; background: white; width: 35px; height: 35px; border-radius: 8px;
+  font-weight: bold; color: var(--blue-primary); box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.quantity-input-v2 input { background: transparent; border: none; width: 50px; text-align: center; font-weight: bold; }
+
+.btn-custom-v2 {
+  background: linear-gradient(to right, var(--blue-primary), var(--pink-primary));
+  color: white; border: none; padding: 12px 30px; border-radius: 12px;
+  font-weight: bold; transition: all 0.3s;
+}
+.shadow-pink { box-shadow: 0 8px 20px rgba(236, 72, 153, 0.3); }
+.btn-custom-v2:hover { transform: translateY(-3px); opacity: 0.9; }
+
+/* --- 6. Tiện ích bổ sung --- */
+.underline-custom {
+  height: 5px; width: 80px; margin: 0 auto;
+  background: linear-gradient(to right, var(--blue-primary), var(--pink-primary));
+  border-radius: 10px;
+}
