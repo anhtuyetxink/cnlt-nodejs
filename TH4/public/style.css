@@ -1,48 +1,64 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f1f2f6;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #74b9ff, #a29bfe);
   margin: 0;
   padding: 0;
 }
 
 .container {
-  width: 700px;
-  margin: 40px auto;
-}
-
-h1 {
-  text-align: center;
-  color: #2f3542;
+  width: 600px;
+  margin: 60px auto;
 }
 
 .card {
   background: white;
-  padding: 20px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-a {
-  text-decoration: none;
-  color: #0984e3;
-  margin-right: 10px;
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-button {
-  padding: 8px 15px;
-  border: none;
-  background: #0984e3;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
+label {
+  font-weight: bold;
 }
 
 input, textarea {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   margin-top: 5px;
   margin-bottom: 15px;
-  border-radius: 5px;
+  border-radius: 6px;
   border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  height: 120px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0652DD;
+}
+
+.back {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: #2d3436;
+  text-decoration: none;
 }

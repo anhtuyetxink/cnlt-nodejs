@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <title>Sửa bài viết</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
 <div class="container">
 
-<div class="card">
-  <h1><%= post.title %></h1>
-  <p><%= post.body %></p>
-</div>
+  <div class="card">
+    <h1>✏️ Chỉnh sửa bài viết</h1>
 
-<a href="/">← Quay lại</a>
+    <form action="/update/<%= post._id %>" method="POST">
+      
+      <label>Tiêu đề</label>
+      <input 
+        type="text" 
+        name="title" 
+        value="<%= post.title %>" 
+        required
+      >
+
+      <label>Nội dung</label>
+      <textarea name="body" required><%= post.body %></textarea>
+
+      <button type="submit">💾 Cập nhật</button>
+    </form>
+
+    <a href="/" class="back">← Quay về trang chủ</a>
+  </div>
 
 </div>
 </body>
