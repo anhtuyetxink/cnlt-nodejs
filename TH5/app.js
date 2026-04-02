@@ -8,9 +8,13 @@ const postRoutes = require('./routes/postRoutes');
 const app = express();
 connectDB();
 
-app.set('view engine', 'ejs');
-app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(bodyParser.urlencoded({ extended: true }));  // Đây là middleware để lấy dữ liệu từ form
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+app.set('view engine', 'ejs');
+
 
 app.use('/', postRoutes);
 

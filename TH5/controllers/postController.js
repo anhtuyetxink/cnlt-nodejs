@@ -1,39 +1,62 @@
-const BlogPost = require('../models/BlogPost');
+const Post = require('../models/BlogPost');
 
-// LIST + SEARCH
-exports.getAllPosts = async (req, res) => {
-    const keyword = req.query.search || '';
 
-    const posts = await BlogPost.find({
-        title: { $regex: keyword, $options: 'i' }
-    });
-
-    res.render('index', { posts, keyword });
+exports.getAllPosts = (req, res) => {
+    const keyword = req.query.search || '';  
+    Post.find({ title: { $regex: keyword, $options: 'i' } }) 
+        .then(posts => {
+            res.render('index', { posts, keyword });  
+        })
+        .catch(err => res.status(500).send("Không thể lấy dữ liệu"));
 };
 
-exports.getCreate = (req, res) => res.render('create');
 
-exports.createPost = async (req, res) => {
-    await BlogPost.create(req.body);
-    res.redirect('/');
+exports.getCreate = (req, res) => {
+    res.render('create');
 };
 
-exports.getDetail = async (req, res) => {
-    const post = await BlogPost.findById(req.params.id);
-    res.render('detail', { post });
+
+exports.createPost = (req, res) => {
+    const { title, content } = req.body;
+    const newPost = new Post({ title, content });
+    newPost.save()
+        .then(() => res.redirect('/'))
+        .catch(err => res.status(500).send('Lỗi khi tạo bài viết'));
 };
 
-exports.getEdit = async (req, res) => {
-    const post = await BlogPost.findById(req.params.id);
-    res.render('edit', { post });
+
+exports.getDetail = (req, res) => {
+    const postId = req.params.id;
+    Post.findById(postId)
+        .then(post => {
+            res.render('detail', { post });
+        })
+        .catch(err => res.status(500).send('Không tìm thấy bài viết'));
 };
 
-exports.updatePost = async (req, res) => {
-    await BlogPost.findByIdAndUpdate(req.params.id, req.body);
-    res.redirect('/');
+
+exports.getEdit = (req, res) => {
+    const postId = req.params.id;
+    Post.findById(postId)
+        .then(post => {
+            res.render('edit', { post });
+        })
+        .catch(err => res.status(500).send('Không tìm thấy bài viết để sửa'));
 };
 
-exports.deletePost = async (req, res) => {
-    await BlogPost.findByIdAndDelete(req.params.id);
-    res.redirect('/');
+
+exports.updatePost = (req, res) => {
+    const postId = req.params.id;
+    const { title, content } = req.body;
+    Post.findByIdAndUpdate(postId, { title, content }, { new: true })
+        .then(() => res.redirect(`/post/${postId}`))
+        .catch(err => res.status(500).send('Lỗi khi cập nhật bài viết'));
+};
+
+
+exports.deletePost = (req, res) => {
+    const postId = req.params.id;
+    Post.findByIdAndDelete(postId)
+        .then(() => res.redirect('/'))
+        .catch(err => res.status(500).send('Không thể xóa bài viết'));
 };

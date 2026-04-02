@@ -67,7 +67,7 @@ h1 {
     background: #e1e1e1;
 }
 
-
+/* Result Text */
 .result-text {
     margin: 20px 0;
     color: #333;
@@ -119,6 +119,7 @@ button:hover, .btn:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
+
 
 .view-btn, .edit-btn, .delete-btn {
     display: inline-block;

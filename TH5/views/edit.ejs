@@ -3,7 +3,7 @@
 <div class="container edit-container">
     <h1 class="edit-title">Sửa bài</h1>
     
-    <form action="/update/<%= post._id %>" method="POST">
+    <form action="/edit/<%= post._id %>" method="POST">
         <label for="title">Tiêu đề:</label>
         <input type="text" id="title" name="title" value="<%= post.title %>" required>
 
