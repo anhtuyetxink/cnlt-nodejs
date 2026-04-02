@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="/style.css">
+
+<div class="container">
+    <h1>🌸 Blog của Ánh Tuyết 🌸</h1>
+
+    <form method="GET" class="search-box">
+        <input name="search" placeholder="🔍 Tìm kiếm blog..." value="<%= keyword %>">
+        <button type="submit">Tìm</button>
+
+        <% if(keyword) { %>
+            <a href="/" class="reset-btn">🏠 Trang chủ</a>
+        <% } %>
+    </form>
+
+    <% if(keyword) { %>
+        <p class="result-text">
+            🔎 Kết quả cho: "<b><%= keyword %></b>"
+        </p>
+    <% } %>
+
+    <a href="/create"><button class="create-btn">+ Tạo bài</button></a>
+
+    <% if(posts.length === 0) { %>
+        <div class="no-result">
+            ❌ Không tìm thấy bài viết nào
+            <br><br>
+            <a href="/"><button class="return-home-btn">Quay về trang chủ</button></a>
+        </div>
+    <% } %>
+
+    <% posts.forEach(post => { %>
+        <div class="card">
+            <h2><%= post.title %></h2>
+
+            <a href="/post/<%= post._id %>" class="btn view-btn">Xem</a>
+            <a href="/edit/<%= post._id %>" class="btn edit-btn">Sửa</a>
+
+            <button class="btn delete-btn" onclick="openModal('<%= post._id %>')">Xóa</button>
+        </div>
+    <% }) %>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <p>Bạn chắc chắn muốn xoá?</p>
+        <button onclick="confirmDelete()">OK</button>
+        <button onclick="closeModal()">Huỷ</button>
+    </div>
+</div>
+
+<script>
+let deleteId = null;
+
+function openModal(id){
+    deleteId = id;
+    document.getElementById('modal').style.display = 'flex';
+}
+
+function closeModal(){
+    document.getElementById('modal').style.display = 'none';
+}
+
+function confirmDelete(){
+    window.location = '/delete/' + deleteId;
+}
+</script>

@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/style.css">
+
+<div class="container edit-container">
+    <h1 class="edit-title">Sửa bài</h1>
+    
+    <form action="/update/<%= post._id %>" method="POST">
+        <label for="title">Tiêu đề:</label>
+        <input type="text" id="title" name="title" value="<%= post.title %>" required>
+
+        <label for="content">Nội dung:</label>
+        <textarea id="content" name="content" rows="6" required><%= post.content %></textarea>
+
+        <button type="submit" class="submit-btn">Lưu</button>
+    </form>
+
+    <a href="/post/<%= post._id %>" class="back-link">← Quay lại</a>
+</div>
