@@ -1,0 +1,230 @@
+{
+  "tu_tuong_ho_chi_minh": [
+    {
+      "id": 1,
+      "question": "Chủ tịch Hồ Chí Minh khẳng định con đường cứu nước đúng đắn của dân tộc Việt Nam là gì?",
+      "options": [
+        "Con đường phong kiến",
+        "Con đường tư bản chủ nghĩa",
+        "Con đường cách mạng vô sản",
+        "Con đường cải lương"
+      ],
+      "answer": "Con đường cách mạng vô sản"
+    },
+    {
+      "id": 2,
+      "question": "Theo tư tưởng Hồ Chí Minh, động lực quan trọng của cách mạng là gì?",
+      "options": [
+        "Đại đoàn kết toàn dân",
+        "Chỉ dựa vào trí thức",
+        "Chỉ dựa vào nông dân",
+        "Chỉ dựa vào công nhân"
+      ],
+      "answer": "Đại đoàn kết toàn dân"
+    },
+    {
+      "id": 3,
+      "question": "Theo Hồ Chí Minh, phẩm chất đạo đức cách mạng tiêu biểu là gì?",
+      "options": [
+        "Cần, kiệm, liêm, chính",
+        "Tự do, hưởng thụ",
+        "Giàu có, quyền lực",
+        "Danh vọng, địa vị"
+      ],
+      "answer": "Cần, kiệm, liêm, chính"
+    },
+    {
+      "id": 4,
+      "question": "Theo Hồ Chí Minh, thanh niên là gì của nước nhà?",
+      "options": [
+        "Người kế tục sự nghiệp cách mạng",
+        "Lực lượng ngoài lề",
+        "Nhóm không quan trọng",
+        "Bộ phận phụ thuộc"
+      ],
+      "answer": "Người kế tục sự nghiệp cách mạng"
+    },
+    {
+      "id": 5,
+      "question": "Theo tư tưởng Hồ Chí Minh, Nhà nước ta là Nhà nước như thế nào?",
+      "options": [
+        "Của dân, do dân, vì dân",
+        "Của một giai cấp duy nhất",
+        "Chỉ phục vụ kinh tế",
+        "Hoạt động độc lập với nhân dân"
+      ],
+      "answer": "Của dân, do dân, vì dân"
+    }
+  ],
+  "lich_su_dang": [
+    {
+      "id": 1,
+      "question": "Đảng Cộng sản Việt Nam được thành lập vào năm nào?",
+      "options": [
+        "1925",
+        "1930",
+        "1945",
+        "1954"
+      ],
+      "answer": "1930"
+    },
+    {
+      "id": 2,
+      "question": "Người chủ trì Hội nghị thành lập Đảng là ai?",
+      "options": [
+        "Phạm Văn Đồng",
+        "Võ Nguyên Giáp",
+        "Nguyễn Ái Quốc",
+        "Trường Chinh"
+      ],
+      "answer": "Nguyễn Ái Quốc"
+    },
+    {
+      "id": 3,
+      "question": "Cách mạng Tháng Tám thành công vào năm nào?",
+      "options": [
+        "1930",
+        "1945",
+        "1954",
+        "1975"
+      ],
+      "answer": "1945"
+    },
+    {
+      "id": 4,
+      "question": "Chiến thắng Điện Biên Phủ diễn ra vào năm nào?",
+      "options": [
+        "1945",
+        "1954",
+        "1968",
+        "1975"
+      ],
+      "answer": "1954"
+    },
+    {
+      "id": 5,
+      "question": "Đại thắng mùa Xuân thống nhất đất nước vào năm nào?",
+      "options": [
+        "1954",
+        "1968",
+        "1975",
+        "1986"
+      ],
+      "answer": "1975"
+    }
+  ],
+  "phap_luat_dai_cuong": [
+    {
+      "id": 1,
+      "question": "Pháp luật là gì?",
+      "options": [
+        "Hệ thống các quy tắc xử sự chung do Nhà nước ban hành hoặc thừa nhận",
+        "Ý kiến cá nhân của mọi người",
+        "Thỏa thuận miệng giữa các bên",
+        "Phong tục riêng của một nhóm nhỏ"
+      ],
+      "answer": "Hệ thống các quy tắc xử sự chung do Nhà nước ban hành hoặc thừa nhận"
+    },
+    {
+      "id": 2,
+      "question": "Một trong các hình thức thực hiện pháp luật là gì?",
+      "options": [
+        "Sử dụng pháp luật",
+        "Trốn tránh pháp luật",
+        "Phủ nhận pháp luật",
+        "Hủy bỏ pháp luật"
+      ],
+      "answer": "Sử dụng pháp luật"
+    },
+    {
+      "id": 3,
+      "question": "Vi phạm pháp luật là hành vi như thế nào?",
+      "options": [
+        "Hành vi trái pháp luật, có lỗi, do chủ thể có năng lực trách nhiệm pháp lý thực hiện",
+        "Mọi hành vi không giống người khác",
+        "Mọi hành vi bị người khác phản đối",
+        "Mọi hành vi vô ý"
+      ],
+      "answer": "Hành vi trái pháp luật, có lỗi, do chủ thể có năng lực trách nhiệm pháp lý thực hiện"
+    },
+    {
+      "id": 4,
+      "question": "Văn bản quy phạm pháp luật là văn bản do ai ban hành?",
+      "options": [
+        "Cơ quan nhà nước có thẩm quyền",
+        "Bất kỳ cá nhân nào",
+        "Chỉ doanh nghiệp",
+        "Chỉ tổ chức xã hội"
+      ],
+      "answer": "Cơ quan nhà nước có thẩm quyền"
+    },
+    {
+      "id": 5,
+      "question": "Công dân có nghĩa vụ gì đối với pháp luật?",
+      "options": [
+        "Sống và làm việc theo Hiến pháp và pháp luật",
+        "Chỉ tuân thủ khi thích",
+        "Không cần quan tâm",
+        "Tự đặt luật riêng"
+      ],
+      "answer": "Sống và làm việc theo Hiến pháp và pháp luật"
+    }
+  ],
+  "chu_nghia_xa_hoi_khoa_hoc": [
+    {
+      "id": 1,
+      "question": "Chủ nghĩa xã hội khoa học do ai sáng lập?",
+      "options": [
+        "Mác và Ăngghen",
+        "Lênin và Stalin",
+        "Hồ Chí Minh và Lênin",
+        "Ăngghen và Mao Trạch Đông"
+      ],
+      "answer": "Mác và Ăngghen"
+    },
+    {
+      "id": 2,
+      "question": "Mục tiêu cao nhất của chủ nghĩa xã hội là gì?",
+      "options": [
+        "Giải phóng con người",
+        "Tăng thuế",
+        "Tập trung quyền lực",
+        "Mở rộng chiến tranh"
+      ],
+      "answer": "Giải phóng con người"
+    },
+    {
+      "id": 3,
+      "question": "Lực lượng xã hội giữ vai trò lãnh đạo trong cách mạng xã hội chủ nghĩa là ai?",
+      "options": [
+        "Giai cấp công nhân",
+        "Địa chủ",
+        "Tư sản mại bản",
+        "Quý tộc"
+      ],
+      "answer": "Giai cấp công nhân"
+    },
+    {
+      "id": 4,
+      "question": "Một trong những đặc trưng của xã hội xã hội chủ nghĩa là gì?",
+      "options": [
+        "Nhân dân lao động làm chủ",
+        "Bóc lột là phổ biến",
+        "Không có pháp luật",
+        "Không có nhà nước"
+      ],
+      "answer": "Nhân dân lao động làm chủ"
+    },
+    {
+      "id": 5,
+      "question": "Chủ nghĩa xã hội khoa học nghiên cứu về điều gì?",
+      "options": [
+        "Những quy luật chính trị - xã hội của quá trình chuyển biến lên chủ nghĩa xã hội",
+        "Chỉ nghiên cứu tự nhiên",
+        "Chỉ nghiên cứu tôn giáo",
+        "Chỉ nghiên cứu kinh doanh"
+      ],
+      "answer": "Những quy luật chính trị - xã hội của quá trình chuyển biến lên chủ nghĩa xã hội"
+    }
+  ]
+}

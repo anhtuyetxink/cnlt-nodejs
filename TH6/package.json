@@ -1,0 +1,9 @@
+{
+  "name": "smart-quiz-qnu-th6",
+  "version": "1.0.0",
+  "description": "Hệ thống thi trắc nghiệm QNU bằng NodeJS HTTP module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

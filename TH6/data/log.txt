@@ -1,0 +1,160 @@
+=== LOG HỆ THỐNG HỌC TRẮC NGHIỆM QNU ===[18:07:50 9/4/2026] Server khởi động tại cổng 3000
+[18:07:53 9/4/2026] Truy cập trang chủ
+[18:07:59 9/4/2026] Truy cập trang events
+[EVENT] startQuiz | Sinh viên: SinhVienQNU | Môn: TuTuongHCM | Thời gian: 18:08:04 9/4/2026
+[EVENT-ONCE] firstAccess | Sinh viên đầu tiên: SinhVienQNU | Thời gian: 18:08:04 9/4/2026
+[18:08:08 9/4/2026] Truy cập trang events
+[EVENT] submitQuiz | Sinh viên: SinhVienQNU | Môn: LichSuDang | Thời gian: 18:08:10 9/4/2026
+[18:08:11 9/4/2026] Truy cập trang events
+[EVENT] viewResult | Sinh viên: SinhVienQNU | Môn: PhapLuat | Thời gian: 18:08:12 9/4/2026
+[CALLBACK] Đã xem kết quả môn PhapLuat
+[18:08:13 9/4/2026] Truy cập trang events
+[18:08:17 9/4/2026] Truy cập trang chủ
+[18:08:19 9/4/2026] Truy cập endpoint /json
+[18:08:24 9/4/2026] Truy cập endpoint /image
+[18:08:56 9/4/2026] Truy cập trang events
+[EVENT] startQuiz | Sinh viên: SinhVienQNU | Môn: PhapLuat | Thời gian: 18:09:00 9/4/2026
+[18:10:23 9/4/2026] Truy cập trang streams
+[18:10:49 9/4/2026] Đã ghi note của ABC
+[18:10:49 9/4/2026] Truy cập trang streams
+[18:11:14 9/4/2026] Truy cập trang streams
+[18:11:16 9/4/2026] Truy cập trang streams
+[18:11:32 9/4/2026] Truy cập trang chủ
+[18:11:35 9/4/2026] Truy cập endpoint /json
+[18:12:05 9/4/2026] Truy cập trang events
+[EVENT] viewResult | Sinh viên: SinhVienQNU | Môn: PhapLuat | Thời gian: 18:12:25 9/4/2026
+[CALLBACK] Đã xem kết quả môn PhapLuat
+[18:12:27 9/4/2026] Truy cập trang events
+[EVENT] startQuiz | Sinh viên: SinhVienQNU | Môn: TuTuongHCM | Thời gian: 18:12:29 9/4/2026
+[18:12:31 9/4/2026] Truy cập trang events
+[18:22:47 9/4/2026] Truy cập trang chủ
+[18:22:58 9/4/2026] Truy cập endpoint /image
+[18:23:03 9/4/2026] Truy cập trang events
+[EVENT] startQuiz | Sinh viên: SinhVienQNU | Môn: TuTuongHCM | Thời gian: 18:23:11 9/4/2026
+[EVENT] submitQuiz | Sinh viên: SinhVienQNU | Môn: LichSuDang | Thời gian: 18:23:16 9/4/2026
+[EVENT] startQuiz | Sinh viên: SinhVienQNU | Môn: TuTuongHCM | Thời gian: 18:23:20 9/4/2026
+[EVENT] viewResult | Sinh viên: SinhVienQNU | Môn: PhapLuat | Thời gian: 18:23:30 9/4/2026
+[CALLBACK] Đã xem kết quả môn PhapLuat
+[18:23:40 9/4/2026] Truy cập trang chủ
+[18:23:48 9/4/2026] Truy cập trang request | URL: /request?subject=PhapLuat&user=SinhVienQNU
+[18:23:51 9/4/2026] Truy cập trang request | URL: /request?subject=PhapLuat&user=AnhTuyet
+[18:23:52 9/4/2026] Truy cập trang request | URL: /request?subject=PhapLuat&user=AnhTuyet
+[18:23:53 9/4/2026] Truy cập trang request | URL: /request?subject=PhapLuat&user=AnhTuyet
+[18:23:54 9/4/2026] Truy cập trang chủ
+[18:23:55 9/4/2026] Truy cập trang request | URL: /request?subject=PhapLuat&user=SinhVienQNU
+[18:23:59 9/4/2026] Truy cập trang request | URL: /request?subject=PhapLuat&user=AnhTuyet
+[18:24:07 9/4/2026] Truy cập trang chủ
+[18:24:08 9/4/2026] Truy cập trang streams
+[18:24:16 9/4/2026] Đã transform dữ liệu text
+[18:24:18 9/4/2026] Truy cập trang streams
+[18:24:20 9/4/2026] Truy cập trang chủ
+[18:25:49 9/4/2026] Truy cập trang chủ
+[18:26:02 9/4/2026] Server khởi động tại cổng 3000
+[18:26:05 9/4/2026] Truy cập trang chủ
+[18:26:08 9/4/2026] Truy cập trang quiz | subject=none
+[EVENT-ONCE] firstAccess | Sinh viên đầu tiên: Sinh viên QNU | Thời gian: 18:26:08 9/4/2026
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 18:26:08 9/4/2026
+[18:26:11 9/4/2026] Truy cập trang quiz | subject=tu_tuong_ho_chi_minh
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Tư tưởng Hồ Chí Minh | Thời gian: 18:26:11 9/4/2026
+[CALLBACK] Đã xem kết quả môn Tư tưởng Hồ Chí Minh
+[18:26:34 9/4/2026] Chấm điểm môn Tư tưởng Hồ Chí Minh | Đúng 5/5 | Điểm 10.00
+[EVENT] viewResult | Sinh viên: Sinh viên QNU | Môn: Tư tưởng Hồ Chí Minh | Thời gian: 18:26:34 9/4/2026
+[EVENT] submitQuiz | Sinh viên: Sinh viên QNU | Môn: Tư tưởng Hồ Chí Minh | Thời gian: 18:26:34 9/4/2026
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 18:26:39 9/4/2026
+[18:26:39 9/4/2026] Truy cập trang quiz | subject=none
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Lịch sử Đảng | Thời gian: 18:26:40 9/4/2026
+[18:26:40 9/4/2026] Truy cập trang quiz | subject=lich_su_dang
+[18:26:41 9/4/2026] Truy cập trang quiz | subject=none
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 18:26:41 9/4/2026
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Pháp luật đại cương | Thời gian: 18:26:42 9/4/2026
+[18:26:42 9/4/2026] Truy cập trang quiz | subject=phap_luat_dai_cuong
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 18:26:43 9/4/2026
+[18:26:43 9/4/2026] Truy cập trang quiz | subject=none
+[18:26:44 9/4/2026] Truy cập trang quiz | subject=chu_nghia_xa_hoi_khoa_hoc
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chủ nghĩa xã hội khoa học | Thời gian: 18:26:44 9/4/2026
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 18:26:45 9/4/2026
+[18:26:45 9/4/2026] Truy cập trang quiz | subject=none
+[18:26:47 9/4/2026] Truy cập trang chủ
+[18:26:48 9/4/2026] Truy cập endpoint /json
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 18:27:00 9/4/2026
+[18:27:00 9/4/2026] Truy cập trang quiz | subject=none
+[18:27:01 9/4/2026] Truy cập trang chủ
+[18:27:02 9/4/2026] Truy cập trang events
+[18:27:03 9/4/2026] Truy cập trang chủ
+[18:27:03 9/4/2026] Truy cập trang request | URL: /request?subject=PhapLuat&user=SinhVienQNU
+[18:27:04 9/4/2026] Truy cập trang chủ
+[18:27:04 9/4/2026] Truy cập trang streams
+[18:27:05 9/4/2026] Truy cập trang chủ
+[18:27:08 9/4/2026] Truy cập endpoint /image
+[00:04:06 10/4/2026] Server khởi động tại cổng 3000
+[00:04:10 10/4/2026] Truy cập trang chủ
+[EVENT-ONCE] firstAccess | Sinh viên đầu tiên: Sinh viên QNU | Thời gian: 00:04:14 10/4/2026
+[00:04:14 10/4/2026] Truy cập trang quiz | subject=tu_tuong_ho_chi_minh
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Tư tưởng Hồ Chí Minh | Thời gian: 00:04:14 10/4/2026
+[00:04:59 10/4/2026] Truy cập trang events
+[EVENT] startQuiz | Sinh viên: SinhVienQNU | Môn: TuTuongHCM | Thời gian: 00:05:01 10/4/2026
+[00:05:05 10/4/2026] Truy cập trang events
+[EVENT] submitQuiz | Sinh viên: SinhVienQNU | Môn: LichSuDang | Thời gian: 00:05:05 10/4/2026
+[00:05:08 10/4/2026] Truy cập trang events
+[EVENT] viewResult | Sinh viên: SinhVienQNU | Môn: PhapLuat | Thời gian: 00:05:08 10/4/2026
+[CALLBACK] Đã xem kết quả môn PhapLuat
+[00:05:10 10/4/2026] Truy cập trang events
+[00:05:12 10/4/2026] Truy cập trang chủ
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 00:05:14 10/4/2026
+[00:05:14 10/4/2026] Truy cập trang quiz | subject=none
+[00:05:18 10/4/2026] Truy cập trang quiz | subject=tu_tuong_ho_chi_minh
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Tư tưởng Hồ Chí Minh | Thời gian: 00:05:18 10/4/2026
+[00:05:23 10/4/2026] Truy cập trang quiz | subject=none
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 00:05:23 10/4/2026
+[00:05:24 10/4/2026] Truy cập trang chủ
+[00:08:07 10/4/2026] Truy cập trang events
+[00:08:11 10/4/2026] Truy cập trang request | URL: /request?subject=TuTuongHCM&user=AnhTuyet
+[00:08:16 10/4/2026] Truy cập trang request | URL: /request?subject=PhapLuat&user=AnhTuyet
+[00:08:18 10/4/2026] Truy cập trang request | URL: /request?subject=PhapLuat&user=AnhTuyet
+[00:08:19 10/4/2026] Truy cập trang chủ
+[00:08:23 10/4/2026] Truy cập trang streams
+[00:40:51 10/4/2026] Truy cập trang chủ
+[00:40:53 10/4/2026] Truy cập trang request | URL: /request?subject=TuTuongHCM&user=AnhTuyet
+[00:41:09 10/4/2026] Truy cập trang request | URL: /request?subject=PhapLuat&user=AnhTuyet
+[00:41:17 10/4/2026] Truy cập trang chủ
+[00:41:23 10/4/2026] Truy cập trang streams
+[00:41:24 10/4/2026] Truy cập trang chủ
+[EVENT] startQuiz | Sinh viên: SinhVienQNU | Môn: PhapLuat | Thời gian: 00:41:25 10/4/2026
+[00:41:28 10/4/2026] Truy cập trang events
+[EVENT] startQuiz | Sinh viên: SinhVienQNU | Môn: TuTuongHCM | Thời gian: 00:41:30 10/4/2026
+[00:41:32 10/4/2026] Truy cập trang events
+[00:41:32 10/4/2026] Truy cập trang chủ
+[00:41:34 10/4/2026] Truy cập endpoint /json
+[00:41:37 10/4/2026] Truy cập endpoint /image
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 00:44:09 10/4/2026
+[00:44:09 10/4/2026] Truy cập trang quiz | subject=none
+[00:44:23 10/4/2026] Truy cập trang chủ
+[00:44:25 10/4/2026] Truy cập trang events
+[00:44:41 10/4/2026] Truy cập trang chủ
+[00:44:43 10/4/2026] Truy cập trang events
+[CALLBACK] Đã xem kết quả môn PhapLuat
+[EVENT] viewResult | Sinh viên: SinhVienQNU | Môn: PhapLuat | Thời gian: 00:44:43 10/4/2026
+[00:44:44 10/4/2026] Truy cập trang events
+[00:44:45 10/4/2026] Truy cập trang chủ
+[00:44:47 10/4/2026] Truy cập trang request | URL: /request?subject=TuTuongHCM&user=AnhTuyet
+[00:45:01 10/4/2026] Truy cập trang chủ
+[00:45:02 10/4/2026] Truy cập trang streams
+[00:45:03 10/4/2026] Truy cập trang chủ
+[00:45:04 10/4/2026] Truy cập trang streams
+[00:45:35 10/4/2026] Truy cập trang chủ
+[00:45:39 10/4/2026] Truy cập endpoint /json
+[EVENT] startQuiz | Sinh viên: SinhVienQNU | Môn: PhapLuat | Thời gian: 00:46:01 10/4/2026
+[00:46:15 10/4/2026] Truy cập trang events
+[00:46:16 10/4/2026] Truy cập trang chủ
+[00:46:18 10/4/2026] Truy cập endpoint /json
+[00:46:23 10/4/2026] Truy cập trang quiz | subject=none
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 00:46:23 10/4/2026
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Tư tưởng Hồ Chí Minh | Thời gian: 00:46:25 10/4/2026
+[00:46:25 10/4/2026] Truy cập trang quiz | subject=tu_tuong_ho_chi_minh
+[EVENT] viewResult | Sinh viên: Sinh viên QNU | Môn: Tư tưởng Hồ Chí Minh | Thời gian: 00:47:06 10/4/2026
+[CALLBACK] Đã xem kết quả môn Tư tưởng Hồ Chí Minh
+[00:47:06 10/4/2026] Chấm điểm môn Tư tưởng Hồ Chí Minh | Đúng 5/5 | Điểm 10.00
+[EVENT] submitQuiz | Sinh viên: Sinh viên QNU | Môn: Tư tưởng Hồ Chí Minh | Thời gian: 00:47:06 10/4/2026
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 00:47:31 10/4/2026
+[00:47:31 10/4/2026] Truy cập trang quiz | subject=none
+[00:47:32 10/4/2026] Truy cập trang chủ

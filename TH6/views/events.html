@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events - QNU Quiz</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="container">
+      <div class="topbar">
+        <div>
+          <p class="eyebrow">EVENT-DRIVEN NODEJS</p>
+          <h1>Minh họa EventEmitter</h1>
+        </div>
+        <a class="btn btn-outline" href="/">Về trang chủ</a>
+      </div>
+
+      <div class="card-grid">
+        <div class="action-card">
+          <h3>Bắt đầu làm bài</h3>
+          <p>Kích hoạt sự kiện <strong>startQuiz</strong> bằng <code>emit()</code>.</p>
+          <a class="btn btn-primary" href="/event?type=startQuiz&subject=TuTuongHCM&student=SinhVienQNU">Trigger Start</a>
+        </div>
+
+        <div class="action-card">
+          <h3>Nộp bài</h3>
+          <p>Kích hoạt sự kiện <strong>submitQuiz</strong> và ghi log hệ thống.</p>
+          <a class="btn btn-primary" href="/event?type=submitQuiz&subject=LichSuDang&student=SinhVienQNU">Trigger Submit</a>
+        </div>
+
+        <div class="action-card">
+          <h3>Xem kết quả</h3>
+          <p>Minh họa event có truyền dữ liệu và callback xử lý.</p>
+          <a class="btn btn-primary" href="/event?type=viewResult&subject=PhapLuat&student=SinhVienQNU">Trigger Result</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Giải thích ngắn</h2>
+        <ul class="feature-list">
+          <li><code>on()</code>: đăng ký listener để lắng nghe sự kiện.</li>
+          <li><code>emit()</code>: phát sự kiện.</li>
+          <li><code>once()</code>: sự kiện chỉ chạy duy nhất 1 lần.</li>
+          <li>Event có thể truyền dữ liệu như tên sinh viên, môn học, thời gian.</li>
+          <li>Có thể dùng callback để xử lý sau khi sự kiện được phát.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

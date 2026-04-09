@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QNU Quiz System</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="container">
+      <header class="hero">
+        <nav class="navbar">
+          <div class="logo">QNU Quiz System</div>
+          <div class="nav-links">
+            <a href="/">Trang chủ</a>
+            <a href="/events">Events</a>
+            <a href="/request?subject=PhapLuat&user=SinhVienQNU">Request</a>
+            <a href="/streams">Streams</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">NỀN TẢNG ÔN TẬP TRẮC NGHIỆM</p>
+            <h1>Hệ thống học trắc nghiệm cho sinh viên QNU</h1>
+            <p class="hero-text">
+              Ứng dụng NodeJS tích hợp EventEmitter, HTTP Server, Request/Header
+              và đầy đủ 4 loại Stream theo đúng bài thực hành tổng hợp.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="/json">Xem dữ liệu JSON</a>
+              <a class="btn btn-outline" href="/image">Xem ảnh banner</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <h3>Tính năng nổi bật</h3>
+            <ul class="feature-list">
+              <li>4 môn học nền tảng cho sinh viên</li>
+              <li>Minh họa Event-driven trong NodeJS</li>
+              <li>Hiển thị Request và Header trực quan</li>
+              <li>Đủ Readable, Writable, Transform, Duplex</li>
+              <li>Hỗ trợ log và tải file log</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="section-head">
+          <p class="eyebrow">DANH MỤC MÔN HỌC</p>
+          <h2>Kho câu hỏi ôn tập</h2>
+        </div>
+
+        <div class="card-grid">
+          <div class="subject-card">
+            <h3>Tư tưởng Hồ Chí Minh</h3>
+            <p>Ôn tập các nội dung cơ bản về tư tưởng, đạo đức và phong cách Hồ Chí Minh.</p>
+          </div>
+
+          <div class="subject-card">
+            <h3>Lịch sử Đảng</h3>
+            <p>Tổng hợp câu hỏi nền tảng về quá trình hình thành và phát triển của Đảng.</p>
+          </div>
+
+          <div class="subject-card">
+            <h3>Pháp luật đại cương</h3>
+            <p>Hệ thống kiến thức cơ sở về quy phạm pháp luật và thực hiện pháp luật.</p>
+          </div>
+
+          <div class="subject-card">
+            <h3>Chủ nghĩa xã hội khoa học</h3>
+            <p>Hỗ trợ ôn tập các khái niệm, nguyên lý và nội dung cốt lõi của môn học.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <p class="eyebrow">ĐIỀU HƯỚNG NHANH</p>
+          <h2>Các trang chức năng</h2>
+        </div>
+
+        <div class="quick-grid">
+          <a class="quick-link" href="/events">Trang EventEmitter</a>
+          <a class="quick-link" href="/request?subject=TuTuongHCM&user=AnhTuyet">Trang Request / Header</a>
+          <a class="quick-link" href="/streams">Trang Stream tổng hợp</a>
+          <a class="quick-link" href="/event?type=startQuiz&subject=PhapLuat&student=SinhVienQNU">Trigger Event</a>
+          <a class="quick-link" href="/json">Endpoint JSON</a>
+          <a class="quick-link" href="/download-log">Tải file log</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

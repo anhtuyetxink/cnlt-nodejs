@@ -1,0 +1,9 @@
+Hệ thống học trắc nghiệm QNU được xây dựng nhằm hỗ trợ sinh viên ôn tập các môn lý luận và kiến thức đại cương.
+
+Trang streams minh họa 4 loại luồng dữ liệu trong NodeJS:
+- Readable Stream: đọc nội dung từ file văn bản.
+- Writable Stream: ghi ghi chú học tập vào file.
+- Transform Stream: biến đổi nội dung text.
+- Duplex Stream: vừa nhận dữ liệu vừa trả lại dữ liệu.
+
+Ứng dụng này cũng kết hợp EventEmitter để mô phỏng các hành động học tập như bắt đầu làm bài, nộp bài và xem kết quả.
