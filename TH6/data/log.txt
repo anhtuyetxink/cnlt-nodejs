@@ -158,3 +158,36 @@
 [EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 00:47:31 10/4/2026
 [00:47:31 10/4/2026] Truy cập trang quiz | subject=none
 [00:47:32 10/4/2026] Truy cập trang chủ
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 00:53:44 10/4/2026
+[00:53:44 10/4/2026] Truy cập trang quiz | subject=none
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Lịch sử Đảng | Thời gian: 00:53:44 10/4/2026
+[00:53:44 10/4/2026] Truy cập trang quiz | subject=lich_su_dang
+[00:53:59 10/4/2026] Chấm điểm môn Lịch sử Đảng | Đúng 5/5 | Điểm 10.00
+[EVENT] submitQuiz | Sinh viên: Sinh viên QNU | Môn: Lịch sử Đảng | Thời gian: 00:53:59 10/4/2026
+[EVENT] viewResult | Sinh viên: Sinh viên QNU | Môn: Lịch sử Đảng | Thời gian: 00:53:59 10/4/2026
+[CALLBACK] Đã xem kết quả môn Lịch sử Đảng
+[00:54:02 10/4/2026] Truy cập trang quiz | subject=none
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 00:54:02 10/4/2026
+[00:54:03 10/4/2026] Truy cập trang quiz | subject=phap_luat_dai_cuong
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Pháp luật đại cương | Thời gian: 00:54:03 10/4/2026
+[00:54:24 10/4/2026] Chấm điểm môn Pháp luật đại cương | Đúng 5/5 | Điểm 10.00
+[EVENT] viewResult | Sinh viên: Sinh viên QNU | Môn: Pháp luật đại cương | Thời gian: 00:54:24 10/4/2026
+[EVENT] submitQuiz | Sinh viên: Sinh viên QNU | Môn: Pháp luật đại cương | Thời gian: 00:54:24 10/4/2026
+[CALLBACK] Đã xem kết quả môn Pháp luật đại cương
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 00:54:27 10/4/2026
+[00:54:27 10/4/2026] Truy cập trang quiz | subject=none
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chủ nghĩa xã hội khoa học | Thời gian: 00:54:27 10/4/2026
+[00:54:27 10/4/2026] Truy cập trang quiz | subject=chu_nghia_xa_hoi_khoa_hoc
+[00:54:28 10/4/2026] Truy cập trang quiz | subject=none
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 00:54:28 10/4/2026
+[00:54:32 10/4/2026] Truy cập trang chủ
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Tư tưởng Hồ Chí Minh | Thời gian: 00:54:34 10/4/2026
+[00:54:34 10/4/2026] Truy cập trang quiz | subject=tu_tuong_ho_chi_minh
+[09:28:08 10/4/2026] Server khởi động tại cổng 3000
+[09:28:12 10/4/2026] Truy cập trang chủ
+[EVENT-ONCE] firstAccess | Sinh viên đầu tiên: Sinh viên QNU | Thời gian: 09:28:16 10/4/2026
+[09:28:16 10/4/2026] Truy cập trang quiz | subject=tu_tuong_ho_chi_minh
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Tư tưởng Hồ Chí Minh | Thời gian: 09:28:16 10/4/2026
+[EVENT] startQuiz | Sinh viên: Sinh viên QNU | Môn: Chưa chọn môn | Thời gian: 09:28:20 10/4/2026
+[09:28:20 10/4/2026] Truy cập trang quiz | subject=none
+[09:28:22 10/4/2026] Truy cập trang chủ
