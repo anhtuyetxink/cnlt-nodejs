@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload nhiều file</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="upload-card">
+      <div class="icon-box">☁</div>
+      <h1>Upload nhiều file</h1>
+      <p class="subtitle">
+        Chọn nhiều file từ máy tính và tải lên hệ thống
+      </p>
+
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="many-files" class="custom-file-label">
+          Chọn file
+        </label>
+        
+        <input type="file" id="many-files" name="many-files" multiple>
+
+        <div class="file-preview" id="filePreview">
+          Chưa có file nào được chọn
+        </div>
+
+        <p class="note">Bạn có thể chọn tối đa 17 file</p>
+
+        <button type="submit" class="upload-btn">Upload ngay</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const fileInput = document.getElementById("many-files");
+    const filePreview = document.getElementById("filePreview");
+
+    fileInput.addEventListener("change", function () {
+      if (this.files.length === 0) {
+        filePreview.innerHTML = "Chưa có file nào được chọn";
+        return;
+      }
+
+      let html = "<strong>Danh sách file đã chọn:</strong><ul>";
+
+      for (let i = 0; i < this.files.length; i++) {
+        html += "<li>" + this.files[i].name + "</li>";
+      }
+
+      html += "</ul>";
+      filePreview.innerHTML = html;
+    });
+  </script>
+</body>
+</html>
