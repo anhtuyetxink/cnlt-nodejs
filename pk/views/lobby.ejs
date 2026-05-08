@@ -1,0 +1,33 @@
+<%- include('partials/head') %>
+
+<main class="screen active">
+  <section class="panel lobby-box">
+    <div class="badge">REALTIME 1V1</div>
+    <h1 class="game-title">⚔️ SWORD DUEL</h1>
+    <p class="subtitle">Đấu kiếm online thời gian thực · Bo3 · Combo · Block phản đòn</p>
+
+    <form id="login-form" class="login-form" autocomplete="off">
+      <label class="input-label" for="username-input">Tên chiến binh</label>
+      <input id="username-input" type="text" placeholder="Ví dụ: Shadow Samurai" maxlength="16" />
+      <button type="submit" class="btn-primary">Tìm Trận Ngay</button>
+    </form>
+
+    <div class="feature-row">
+      <div><b>2</b><span>người chơi</span></div>
+      <div><b>3</b><span>hiệp tối đa</span></div>
+      <div><b>60</b><span>FPS server</span></div>
+    </div>
+
+    <div class="controls-hint">
+      <h3>🎮 Điều khiển</h3>
+      <div class="controls-grid">
+        <span>← → / A D</span><span>Di chuyển</span>
+        <span>J / Z</span><span>Tấn công</span>
+        <span>K / X</span><span>Đỡ đòn</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="/js/login.js"></script>
+<%- include('partials/footer') %>

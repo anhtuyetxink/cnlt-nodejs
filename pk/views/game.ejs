@@ -1,0 +1,63 @@
+<%- include('partials/head') %>
+
+<main>
+  <section id="screen-waiting" class="screen active">
+    <div class="panel waiting-box">
+      <div class="spinner"></div>
+      <h2>Đang tìm đối thủ...</h2>
+      <p id="waiting-msg">Đang ghép trận với một kiếm sĩ khác.</p>
+      <button id="btn-cancel" class="btn-secondary">Huỷ tìm trận</button>
+    </div>
+  </section>
+
+  <section id="screen-game" class="screen game-screen">
+    <div id="hud">
+      <div class="hud-player" id="hud-p1">
+        <span class="hud-name" id="p1-name">Player 1</span>
+        <div class="hp-bar-wrap"><div class="hp-bar" id="p1-hp-bar"></div></div>
+        <span class="hud-hp" id="p1-hp">100</span>
+        <div class="wins-dots" id="p1-wins"></div>
+      </div>
+
+      <div class="hud-center">
+        <span id="round-label">Round 1</span>
+        <div id="countdown-display"></div>
+      </div>
+
+      <div class="hud-player hud-right" id="hud-p2">
+        <div class="wins-dots" id="p2-wins"></div>
+        <span class="hud-hp" id="p2-hp">100</span>
+        <div class="hp-bar-wrap"><div class="hp-bar hp-bar-right" id="p2-hp-bar"></div></div>
+        <span class="hud-name" id="p2-name">Player 2</span>
+      </div>
+    </div>
+
+    <div class="canvas-shell">
+      <canvas id="game-canvas" width="800" height="400"></canvas>
+      <div id="toast"></div>
+      <div id="my-combo" class="combo-display hidden"></div>
+    </div>
+
+    <div class="touch-controls" aria-label="Điều khiển cảm ứng">
+      <button data-action="left">←</button>
+      <button data-action="right">→</button>
+      <button data-action="attack">ATTACK</button>
+      <button data-action="block">BLOCK</button>
+    </div>
+  </section>
+
+  <section id="screen-result" class="screen">
+    <div class="panel result-box">
+      <div id="result-crown">👑</div>
+      <h2 id="result-title">Chiến thắng!</h2>
+      <p id="result-name"></p>
+      <button id="btn-rematch" class="btn-primary">Chơi Lại</button>
+      <button id="btn-lobby" class="btn-secondary">Về Sảnh</button>
+    </div>
+  </section>
+</main>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/lobby.js"></script>
+<script src="/js/game.js"></script>
+<%- include('partials/footer') %>

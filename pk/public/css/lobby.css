@@ -1,0 +1,106 @@
+.lobby-box {
+  width: min(480px, 92vw);
+  padding: 38px;
+  text-align: center;
+  animation: floatIn .55s ease both;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 7px 12px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(255,209,102,.35);
+  border-radius: 999px;
+  background: rgba(255,209,102,.08);
+  color: var(--gold);
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.game-title {
+  font-size: clamp(2.55rem, 8vw, 4.2rem);
+  line-height: .95;
+  font-weight: 1000;
+  letter-spacing: 3px;
+  color: var(--gold);
+  text-shadow: 0 0 28px rgba(255, 209, 102, .42);
+}
+
+.subtitle {
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 14px auto 24px;
+  max-width: 360px;
+}
+
+.input-label {
+  display: block;
+  text-align: left;
+  color: var(--muted);
+  font-size: .78rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  letter-spacing: .3px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 15px;
+  background: rgba(5, 5, 14, .72);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 14px;
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+input[type="text"]:focus {
+  border-color: rgba(255,209,102,.65);
+  box-shadow: 0 0 0 4px rgba(255,209,102,.10);
+  transform: translateY(-1px);
+}
+
+.feature-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 18px 0 20px;
+}
+.feature-row > div {
+  padding: 12px 8px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(255,255,255,.04);
+}
+.feature-row b { display: block; color: var(--gold); font-size: 1.35rem; line-height: 1; }
+.feature-row span { display: block; color: var(--muted); font-size: .72rem; margin-top: 5px; }
+
+.controls-hint {
+  text-align: left;
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+}
+.controls-hint h3 { color: var(--muted); font-size: .86rem; margin-bottom: 12px; }
+.controls-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 9px 14px;
+  color: var(--muted);
+  font-size: .88rem;
+}
+.controls-grid span:nth-child(odd) {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--gold);
+  background: rgba(0,0,0,.28);
+  border: 1px solid var(--border);
+  padding: 4px 9px;
+  border-radius: 9px;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .lobby-box { padding: 28px 22px; }
+  .feature-row { grid-template-columns: 1fr; }
+}

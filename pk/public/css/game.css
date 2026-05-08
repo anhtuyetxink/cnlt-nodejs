@@ -1,0 +1,55 @@
+#toast {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  padding: 9px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.13);
+  background: rgba(0,0,0,.38);
+  color: var(--text);
+  font-size: .82rem;
+  font-weight: 800;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s, transform .2s;
+  backdrop-filter: blur(8px);
+}
+#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+.combo-display {
+  position: absolute;
+  top: 72px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--gold);
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
+  font-weight: 1000;
+  text-shadow: 0 0 22px rgba(255,209,102,.65), 0 3px 0 rgba(0,0,0,.35);
+  pointer-events: none;
+  animation: comboAnim .28s ease-out;
+}
+.combo-display.hidden { display: none; }
+
+.touch-controls {
+  display: none;
+  width: min(100vw, 900px);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 10px;
+  background: rgba(7,7,18,.92);
+}
+.touch-controls button {
+  min-height: 48px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255,255,255,.07);
+  color: var(--text);
+  font-weight: 1000;
+  touch-action: none;
+}
+.touch-controls button.pressed { background: rgba(255,209,102,.22); border-color: rgba(255,209,102,.5); }
+
+@media (max-width: 760px) {
+  .touch-controls { display: grid; }
+}
